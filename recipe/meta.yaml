@@ -1,5 +1,5 @@
 {% set name = "finam" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/finam-{{ version }}.tar.gz
-  sha256: 86669f6730ba92ad361d58b01eb135fdd6d9be59463fd7ad6a945785bfbfbe32
+  sha256: b9bf0e5a1b04288cc3ede804ded9a11500b523b6a24a18f2be5fd9228942a54f
   patches:
     - skip_c_log_test_win.patch  # [win]
 
